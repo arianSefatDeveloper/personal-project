@@ -1,3 +1,280 @@
 @import "normalize.css";
 @import "grid.css";
 @import "fonts.css";
+
+:root {
+    --text-color: #333333;
+    --app-bg-color: #fff;
+    --section-bg-color: #fff;
+    --primary-color: #0ABEAD;
+}
+
+/*
+
+-- Reset Styles
+
+*/
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+
+/*
+
+-- components
+
+*/
+.app-btn{
+    width:16rem ;
+    height: 5rem;
+    border-radius: 4rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    background-color: var(--primary-color);
+    font-family: "poppins semibold";
+    box-shadow: 0 1.5rem 4rem rgba(11, 190, 173, 40%);
+}
+
+.app-btn--oreng{
+    
+    background-color: #f57F17;
+    box-shadow: 0 1.5rem 4rem rgba(245, 127, 23, 24%);
+
+}
+
+/*
+
+-- Helper Class
+
+*/
+.align-itmes-center{
+    align-items: center;
+}
+
+
+
+/*
+
+-- App
+
+*/
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Poppins";
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--app-bg-color);
+    padding-top: 12rem;
+}
+
+
+/*
+
+ - Header -
+
+*/
+
+
+.header{
+    /* background: #d2c4c4; */
+    box-shadow:  0 0.5rem 4rem rgba(4 , 195 , 225 , 0.16);
+    background-color: var(--section-bg-color);
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    z-index: 100;
+    
+
+}
+.nav__logo{
+    color: var(--primary-color);
+    font-family:"poppins black" ;
+    font-size: 5rem;
+    margin: 0;
+
+}
+
+.menu{
+    display: flex;
+
+}
+.menu__item{
+    margin-right: 4rem;
+
+}
+.menu__item:last-child{
+    margin-right: 0;
+}
+.menu__link{
+    display: inline-block;
+    color: var(--text-color);
+    font-family: "poppins medium";
+    font-size: 1.5rem;
+    transition: all 200ms ease-in;
+}
+.menu__link:hover{
+    color: var(--primary-color);
+}
+
+.menu__link--active{
+    color: var(--primary-color);
+
+}
+.nav__toggle-icon{
+    display: none;
+    width: 5rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.nav__toggle-line{
+    position: relative;
+}
+
+.nav__toggle-line,
+.nav__toggle-line::before,
+.nav__toggle-line::after {
+    content: " ";
+    width: 4rem;
+    height: 0.4rem;
+    background-color: var(--primary-color);
+    border-radius: 2rem;  
+    transition: all 200ms ease-in;
+    
+}
+
+
+.nav__toggle-line::before{
+    
+    position: absolute;
+    top: 1rem;
+}
+.nav__toggle-line::after{
+    
+    position: absolute;
+    top: -1rem;
+    
+}
+
+.nav__toggle-icon--open .nav__toggle-line{
+    background: transparent;
+    
+}
+.nav__toggle-icon--open .nav__toggle-line::before{
+    transform: translateY(-1rem) rotate(-45deg);
+    
+}
+.nav__toggle-icon--open .nav__toggle-line::after{
+    transform: translateY(1rem) rotate(45deg);
+    
+}
+
+.cover{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,10%);
+    z-index: -1;
+    opacity: 0;
+}
+.cover--open{
+    opacity: 1;
+    z-index: 99;
+}
+
+/* main */
+
+
+
+
+/* home section  */
+
+.home{
+    margin-top: 8rem;
+    background-image: url(../images/shapes/header-shape.svg);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: 155rem;
+    background-position: bottom;
+    height: 82rem;
+}
+
+
+.home__name{
+    font-family: "Poppins SemiBold";
+    color:var(--primary-color);
+    font-size: 2.5rem;
+
+}
+.home__name span{
+    color: #f57F17;
+    margin: 0;
+
+}
+.home__title{
+    font-family: "poppins bold";
+    color:var(--primary-color);
+
+    font-size: 5rem;
+    margin: 0;
+
+}
+.home__caption{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    opacity: 70%;
+
+}
+.home__links-wrapper{
+    display: flex;
+    gap: 3rem;
+
+}
+
+.home__photo{
+    width: 55rem;
+    height: 55rem;
+    border-radius: 100%;
+    background-image: url(../images/header-avatar.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2rem solid var(--app-bg-color);
+    box-shadow: 0 0 5rem rgba(4 , 195 , 225 , 0.16);
+}
+
+
+
+/* Aabout Us Section  */
+
+
+
+
+
+
