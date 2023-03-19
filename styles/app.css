@@ -79,6 +79,7 @@ ul {
 .section-caption{
     color: var(--text-color);
     margin: .5rem 0 2rem 0;
+    letter-spacing: .5rem;
 
 }
 .section-line{
@@ -336,7 +337,7 @@ body {
     display: flex;
     background-color: var(--app-bg-color);
     box-shadow: 0 0 5rem rgba(4 , 195 , 225 , 0.16);
-    margin-bottom: 10rem;
+    
 }
 .about__cover{
     flex-basis: 50%;
@@ -410,7 +411,61 @@ body {
 }
        
 
+/* Services Section  */
 
+.services{
+    margin-top: 20rem;
+}
+.service{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 2rem;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+
+}
+.service h4{
+    font-size: 2.4rem;
+    font-family: "poppins bold";
+}
+.service h4 , p{
+    z-index: 2;
+}
+.service__wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+
+}
+
+
+
+
+.service--purple{
+    background-color:#8540FF ;
+}
+.service--yellow{
+    background-color:  #FFC50C; ;
+}
+.service--pink{
+    background-color:#EC407A ;
+}
+.service--orange{
+    background-color:#ff6331 ;
+}
+.service--blue{
+    background-color:#13B6FF ;
+}
+.service--green{
+    background-color:#49AF46 ;
+}
 
 
 

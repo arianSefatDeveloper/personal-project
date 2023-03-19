@@ -14,7 +14,9 @@
     .home{
         height: 70rem;
     }
-    
+    .service{
+        padding: 6rem 2rem;
+    }
 }
 @media screen and (max-width:992px) {
     .home  .row{
@@ -54,6 +56,9 @@
     }
     .about{
         flex-direction: column;
+    }
+    .service{
+        padding: 3rem 0;
     }
     
 }
@@ -104,6 +109,12 @@
     z-index: 99;
 }
 
+.about__links-wrapper{
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
     
 }
 @media screen and (max-width:576px) {
@@ -130,11 +141,7 @@
     .about__content{
         padding: 4rem 2rem;
     }
-    .about__links-wrapper{
-        gap: 1.5rem;
-        align-items: center;
-        justify-content: center;
-    }
+   
     
 }
 
