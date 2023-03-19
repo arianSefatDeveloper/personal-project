@@ -46,9 +46,14 @@
         justify-content: center;
         gap: 1.5rem;
     }
+   
     .home{
         margin-top: 1rem;
         background-image: none;
+        height: auto;
+    }
+    .about{
+        flex-direction: column;
     }
     
 }
@@ -117,10 +122,31 @@
     }
     .home__photo{
         margin: 0 auto;
-        width: 30rem;
-        height: 30rem;
+        width: 28rem;
+        height: 28rem;
         border: 1.2rem solid #fff;
      
     }
-                      
+    .about__content{
+        padding: 4rem 2rem;
+    }
+    .about__links-wrapper{
+        gap: 1.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width:430px) {
+    
+    .about-link{
+        width: 100%;
+    }
+    .home__link{
+        width: 100%;
+    }
+    .about-list__itme{
+        font-size: 1.5rem;
+    }
 }
