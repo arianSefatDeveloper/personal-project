@@ -2,6 +2,7 @@ let toggleIcon  = document.querySelector(".nav__toggle-icon");
 let menu  = document.querySelector(".menu");
 let cover  = document.querySelector(".cover");
 let resumeListItmes = document.querySelectorAll(".resume-list__itme");
+let portfolioListItme = document.querySelectorAll(".portfolio-list__itme")
 
 
 toggleIcon.addEventListener("click" , function(){
@@ -10,6 +11,10 @@ toggleIcon.addEventListener("click" , function(){
     menu.classList.toggle("menu--open")
     cover.classList.toggle("cover--open")
 })
+
+
+
+
 
 resumeListItmes.forEach(resumeListItme=>{
     resumeListItme.addEventListener("click" ,  function(){
@@ -24,4 +29,24 @@ resumeListItmes.forEach(resumeListItme=>{
 
     })
 
+    })
+
+
+    portfolioListItme.forEach(portfolioitem=>{
+        
+        portfolioitem.addEventListener('click' , function(){
+            document.querySelector(".portfolio-list__itme--active").classList.remove('portfolio-list__itme--active');
+            portfolioitem.classList.add("portfolio-list__itme--active");
+            
+            
+            
+            
+            let portfolioattribute =  portfolioitem.getAttribute("data-portfilio-id");
+            // console.log(portfolioattribute);
+            
+            console.log(document.querySelector(portfolioattribute));
+            document.querySelector('.portfolio-content--show').classList.remove('portfolio-content--show');
+            document.querySelector(portfolioattribute).classList.add('portfolio-content--show');
+           
+        })
     })
