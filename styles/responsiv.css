@@ -17,6 +17,14 @@
     .service{
         padding: 6rem 2rem;
     }
+    .resume-list__itme::after{
+        max-width: 19rem;
+    }
+    .resume-list__text {
+       
+        margin-left: 1.4rem;
+        font-size: 1.4rem;
+    }
 }
 @media screen and (max-width:992px) {
     .home  .row{
@@ -60,7 +68,41 @@
     .service{
         padding: 3rem 0;
     }
-    
+    .resume-list{
+        background-color: transparent;
+        box-shadow: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .resume-list__itme {
+        background-color:var(--primary-color);
+        padding:1rem 2rem ;
+        border-radius: 4rem;
+    }
+    .resume-list__icon{
+        display: none;
+    }
+    .resume-list::before , .resume-list__itme::after , .resume-content__title::before{
+        content: none;
+    }
+    .resume-list__text{
+        margin: 0;
+    }
+    .resume-list__itme:last-child{
+        margin: auto;
+    }
+    .resume-content{
+        padding: 0;
+        border: none;
+    }
+    .resume-content{
+        padding: .5rem 1rem;
+    }
+    .resume-content__title {
+        font-size: 1.6rem;
+    }
 }
 @media screen and (max-width:768px) {
     .menu{
@@ -157,3 +199,5 @@
         font-size: 1.5rem;
     }
 }
+
+
