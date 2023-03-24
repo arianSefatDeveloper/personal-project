@@ -636,7 +636,7 @@ body {
 
 .portfolio{
     margin-top: 20rem;
-    margin-bottom: 10rem;
+   
 } 
 .portfolio-list{
   display: flex;
@@ -688,5 +688,227 @@ body {
  .swiper-pagination-bullet-active{
     border-color: var(--primary-color )!important;
  }
+
+
+
+
+ 
+/* Pricing Section  */
+
+
+
+
+.pricing{
+
+    margin-top: 20rem;
+    box-shadow: 0 0 6rem rgba(19 , 182 , 225 , 0.24);
+    
+    padding: 12rem 0 15rem 0;
+    transform: skewY(-4deg);
+    background-color: var(--section-bg-color);
+}
+.package{
+    
+    box-shadow: 0 0 4rem rgba(96 , 233 , 225 , 0.27);
+    width: 100%;
+}
+.package__head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 3rem 0;
+}
+.package__type{
+    font-family: "poppins semibold";   
+    margin: 0;
+    font-size: 3.2rem;
+}
+.package__price{
+    margin: 1rem 0;
+    font-family: "poppins semibold";
+    font-size: 2rem;   
+
+    
+}
+.package__filter{
+    
+}
+.package__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem ;
+    
+}
+.package-options{
+    margin: 3rem 0;
+    
+}
+.package-options__item{
+    margin-bottom: 2rem;
+}
+.package-options__item:last-child{
+    margin-bottom: 0;
+}
+.package-options__icon{
+    
+}
+
+.package__link{
+    
+}
+
+
+
+
+.package__head--orange{
+
+    background-color: #ff6331;
+
+}
+.package__head--purple{
+    background-color: #803afb;
+}
+.package__head--pink{
+    background-color: #f5276c;
+}
+
+.app-btn--purple{
+    background-color: #803afb;
+    box-shadow: 0 0 4rem rgba(128, 58, 251, 24%);
+
+}
+.app-btn--pink{
+    background-color: #f5276c;
+    box-shadow: 0 0 4rem rgba(245, 39, 108, 40%);
+}
+
+
+
+
+
+
+
+/* Contact us Section  */
+
+
+
+
+
+.contactus{
+    margin-top: 20rem;
+    
+}
+.contactus__wrapper{
+padding: 3rem 0 ;
+    background-image: url("../images/map.jpg");
+    background-size: cover;
+    height: 65rem;
+
+}
+.contact__form-wrapper{
+    background-color: var(--app-bg-color);
+    box-shadow: 0 0 4rem rgba(19, 182, 255, 24%);
+    height: 100%;
+    padding:  4rem;
+    max-width: 50rem;
+    
+}
+.contact__form-wrapper__text{
+    font-family: "poppins Bold";
+    font-size: 3.2rem;
+    color: var(--primary-color);
+    margin: 0;    
+    
+}
+.contactus__form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+}
+.cuntactus__input{
+    border: none;
+    outline: none;
+    box-shadow: 0 0 4rem rgba(19, 182, 255, 24%);
+    border-radius: 1rem;
+    padding: 1.2rem 2rem;
+    color: var(--text-color);
+}
+.cuntactus__input::placeholder{
+    
+    color: var(--text-color);
+}
+.cuntactus__input--texterea{
+    resize: vertical;
+    max-height: 17rem; 
+    min-height: 5rem;
+
+}
+.contantus__submit{
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5rem;
+    padding: 1.2rem 0;
+    color: #fff;
+    margin-top: 1rem;
+    outline:none;
+    cursor: pointer;
+    font-family: "poppins semibold";
+
+}
+
+
+
+/* Footer Section  */
+
+.footer{
+    padding: 2rem 0;
+    background-color: var(--app-bg-color);
+}
+.footer__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.footer-text{
+    letter-spacing: .5rem;
+    font-family: "poppins Semibold";
+    color: var(--text-color);
+}
+.footer__socials{
+    display: flex;
+    gap: 1rem;
+}
+.footer__social{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    background-color: #1f2935;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in;
+    
+}
+.footer__social svg{
+    fill: var(--app-bg-color);
+    height: 2.5rem;;
+}
+.footer__social:hover{
+    background-color: var(--primary-color);
+}
+
+
+
+
+
+
+
 
 

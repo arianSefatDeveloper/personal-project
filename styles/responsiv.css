@@ -103,6 +103,20 @@
     .resume-content__title {
         font-size: 1.6rem;
     }
+    .contact__form-wrapper{
+        margin: 0 auto;
+    
+    }
+    .footer__wrapper{
+        flex-direction: column-reverse;
+    }
+    
+   
+    .footer-text {
+        font-size: 1rem;
+        width: 100%;
+    }
+    
 }
 @media screen and (max-width:768px) {
     .menu{
@@ -197,6 +211,10 @@
     }
     .about-list__itme{
         font-size: 1.5rem;
+    }
+    .contact__form-wrapper{
+        padding: 2rem; 
+    
     }
 }
 
