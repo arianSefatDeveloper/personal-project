@@ -81,6 +81,7 @@
         padding:1rem 2rem ;
         border-radius: 4rem;
     }
+
     .resume-list__icon{
         display: none;
     }
@@ -102,6 +103,11 @@
     }
     .resume-content__title {
         font-size: 1.6rem;
+    }
+
+    .resume-list__itme--activ{
+        background-color: #f57F17;
+        box-shadow: 0 1.5rem 4rem rgba(245, 127, 23, 24%);
     }
     .contact__form-wrapper{
         margin: 0 auto;

@@ -188,7 +188,7 @@ body {
 }
 .menu__link{
     display: inline-block;
-    color: var(--text-color);
+    color:inherit;
     font-family: "poppins medium";
     font-size: 1.5rem;
     transition: all 200ms ease-in;
@@ -197,7 +197,7 @@ body {
     color: var(--primary-color);
 }
 
-.menu__link--active{
+.menu__item--active{
     color: var(--primary-color);
 
 }
@@ -516,6 +516,7 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
+    color:var(--text-color);
     
 }
 .resume-list__itme::after{
@@ -540,6 +541,7 @@ body {
 }
 .resume-list__itme--activ{
     color: #fff;
+
     transition: all 200ms ease-in;
 
 }
