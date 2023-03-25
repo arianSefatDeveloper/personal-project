@@ -9,6 +9,29 @@
     --primary-color: #0ABEAD;
 }
 
+
+:root.dark-theme{
+    --text-color: #95A5C6;
+    --app-bg-color: #161D26;
+    --section-bg-color: #1F2935;
+}
+
+:root.dark-theme .header,
+:root.dark-theme .home__photo,
+:root.dark-theme .about,
+:root.dark-theme .resume,
+:root.dark-theme .resume-list,
+:root.dark-theme .pricing,
+:root.dark-theme .package{
+    box-shadow: none;
+}
+
+:root.dark-theme .home{
+    background-image: url("../images/shapes/header-shape-dark.svg");
+}
+:root.dark-theme .resume-content__title{
+    color: #F57F17;
+}
 /*
 
 -- Reset Styles
@@ -684,6 +707,7 @@ body {
     height: 2rem !important;
     border: 4px solid #bfbebf !important;
     background-color:#fff  !important;
+    opacity: 1 !important;
     
 }
 
@@ -743,6 +767,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 2rem 1rem ;
+    background-color: var(--app-bg-color);
     
 }
 .package-options{
@@ -812,18 +837,20 @@ padding: 3rem 0 ;
 
 }
 .contact__form-wrapper{
-    background-color: var(--app-bg-color);
+    background-color: var(--section-bg-color);
     box-shadow: 0 0 4rem rgba(19, 182, 255, 24%);
     height: 100%;
     padding:  4rem;
     max-width: 50rem;
+    margin-left: auto;
     
 }
 .contact__form-wrapper__text{
     font-family: "poppins Bold";
     font-size: 3.2rem;
     color: var(--primary-color);
-    margin: 0;    
+    margin: 0; 
+    
     
 }
 .contactus__form{
@@ -840,6 +867,7 @@ padding: 3rem 0 ;
     border-radius: 1rem;
     padding: 1.2rem 2rem;
     color: var(--text-color);
+    background-color: var(--app-bg-color);
 }
 .cuntactus__input::placeholder{
     
@@ -887,7 +915,7 @@ padding: 3rem 0 ;
     display: flex;
     gap: 1rem;
 }
-.footer__social{
+.footer__social ,.change-theme{
     width: 4rem;
     height: 4rem;
     border-radius: 100%;
@@ -896,14 +924,20 @@ padding: 3rem 0 ;
     align-items: center;
     justify-content: center;
     transition: all .2s ease-in;
+    cursor: pointer;
     
 }
-.footer__social svg{
+.footer__social svg ,
+.change-theme svg{
     fill: var(--app-bg-color);
     height: 2.5rem;;
 }
 .footer__social:hover{
     background-color: var(--primary-color);
+}
+
+.change-theme svg{
+    fill: #fff;
 }
 
 
