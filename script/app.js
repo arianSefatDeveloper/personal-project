@@ -3,7 +3,7 @@ let menu  = document.querySelector(".menu");
 let cover  = document.querySelector(".cover");
 let resumeListItmes = document.querySelectorAll(".resume-list__itme");
 let portfolioListItme = document.querySelectorAll(".portfolio-list__itme")
-let menuItem = document.querySelectorAll('.menu__item')
+let menuItems = document.querySelectorAll('.menu__item')
 const sections = document.querySelectorAll("main > section")
 const changeThemeBtn = document.querySelector(".change-theme");
 
@@ -73,32 +73,19 @@ resumeListItmes.forEach(resumeListItme=>{
             
         })
     })
-    
-    const observer = new IntersectionObserver(observerHandler,{
-        threshold: 0.5
-    });
-    
-    function observerHandler(allSections) {
-        allSections.map(section => {
-            let sectionClassName = section.target.className
-            let sectionMenuItem = document.querySelector(`.menu__item[data-section=${sectionClassName}]`)
-            if (section.isIntersecting){
-                sectionMenuItem.classList.add("menu__item--active")
-            } else {
-                sectionMenuItem.classList.remove("menu__item--active")
-            }
-        })
-    }
-    
-    
-    sections.forEach(section => {
-        observer.observe(section)
-    })
+
+
+   
+
+
+  
     menuItems.forEach(item => {
         item.addEventListener("click", function (e) {
             e.preventDefault()
-            removeActiveClass('menu__item--active')
+            
+            
             item.classList.add("menu__item--active")
+            document.querySelector('.menu__item--active').classList.remove('menu__item--active')
     
             let sectionClass = item.getAttribute("data-section")
             let sectionOffsetTop = document.querySelector(`.${sectionClass}`).offsetTop
@@ -109,6 +96,4 @@ resumeListItmes.forEach(resumeListItme=>{
             })
         })
     })
-
-
 
